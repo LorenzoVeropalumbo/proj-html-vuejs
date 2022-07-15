@@ -5,6 +5,9 @@
     <main>
       <SpecialistsComponent />
       <PanoramaImage />
+      <ExploreComponent />
+      <OurCoreComponent />
+      <SliderComponent />
     </main>
   </div>
 </template>
@@ -14,13 +17,18 @@
 import HeaderComponent from "./components/HeaderComponent.vue";
 import SpecialistsComponent from "./components/SpecialistsComponent.vue";
 import PanoramaImage from "./components/PanoramaImage.vue";
-
+import ExploreComponent from "./components/ExploreComponent.vue";
+import OurCoreComponent from "./components/OurCoreComponent.vue";
+import SliderComponent from "./components/SliderComponent.vue";
 export default {
   name: 'App',
   components: {
    HeaderComponent,
    SpecialistsComponent,
    PanoramaImage,
+   ExploreComponent,
+   OurCoreComponent,
+   SliderComponent,
   },
   data(){
     return{

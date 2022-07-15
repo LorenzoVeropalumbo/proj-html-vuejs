@@ -32,27 +32,27 @@
 
 <script>
 export default {
-
+  name:"PanoramaImage",
 }
 </script>
 
 <style lang="scss" scoped>
   @import "../style/variables.scss";
-  
+
   section{
-    margin-bottom: 40px;
     position: relative;
+
     .img{      
       background-image: url("../assets/img/home-244125289.jpg");
       background-repeat: no-repeat;  
       background-position: center;
       background-size: 100%;
-      
-      height: 1000px;
+      width: 100%;
+      height: 900px;
 
       .standard-wave{
         position: absolute;
-        bottom: 0px;
+        bottom: -5px;
       }
 
       .rotate-wave{
@@ -70,7 +70,7 @@ export default {
 
       .info{
         font-family: 'Raleway', sans-serif;
-        color: #fed03d;
+        color: $text-subtitle;
 
         i{
           font-size: 90px;
@@ -84,7 +84,7 @@ export default {
 
         span{
           font-family: 'Montserrat', sans-serif;
-          color: white;
+          color: $text-white;
           font-size: 20px;
           text-transform: uppercase;
           font-weight: 500;

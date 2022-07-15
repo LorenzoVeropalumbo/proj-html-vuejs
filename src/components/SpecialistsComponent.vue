@@ -4,7 +4,7 @@
       <span class="section-title">Specialists In Modern Construction</span>
       <div class="line"></div>
       <p class="section-subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
       </p>
     </div>
     <div class="schedule-container">
@@ -60,20 +60,13 @@ export default {
       color: $text-main-color;
     }
 
-    .line{
-      height: 2px;
-      width: 260px;
-      background-color: $bg-button-yellow;
-      margin: 2rem auto 2.8rem;
-    }
-
     .section-subtitle{
-      width: 55%;
+      width: 45%;
       margin: 0 auto;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 600;
-      line-height: 55px;
-      color: #bcbcbc;
+      line-height: 45px;
+      color: $text-light-grey;
     }
 
     .schedule-container{
@@ -83,7 +76,7 @@ export default {
 
       .schedule{
         width: 20%;
-        background-color: #f5f5f5;
+        background-color: $bg-button-light-grey;
         margin: 10px;
         border-radius: 15px;
 

@@ -62,7 +62,7 @@ export default {
         font-family: Arial, Helvetica, sans-serif;  
 
         div{
-          background-color: white;
+          background-color: $main-bg-color;
           border-radius: 10px;
           margin: 8px;
           height: 80px;
