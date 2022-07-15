@@ -8,6 +8,8 @@
       <ExploreComponent />
       <OurCoreComponent />
       <SliderComponent />
+      <LatestNewsComponent />
+      <ExploreComponent />
     </main>
   </div>
 </template>
@@ -20,6 +22,7 @@ import PanoramaImage from "./components/PanoramaImage.vue";
 import ExploreComponent from "./components/ExploreComponent.vue";
 import OurCoreComponent from "./components/OurCoreComponent.vue";
 import SliderComponent from "./components/SliderComponent.vue";
+import LatestNewsComponent from "./components/LatestNewsComponent.vue";
 export default {
   name: 'App',
   components: {
@@ -29,6 +32,7 @@ export default {
    ExploreComponent,
    OurCoreComponent,
    SliderComponent,
+   LatestNewsComponent,
   },
   data(){
     return{

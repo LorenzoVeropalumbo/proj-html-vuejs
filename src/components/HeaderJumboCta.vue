@@ -134,8 +134,7 @@ export default {
             color: $text-white;
             margin: 0.9rem;
           }
-        }
-        
+        }      
       }      
     }
     

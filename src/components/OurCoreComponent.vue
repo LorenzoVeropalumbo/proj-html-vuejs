@@ -91,7 +91,7 @@ export default {
           display: inline-block;
           font-size: 70px;
           margin: 20px 0;
-          color: white;
+          color: $text-white;
         }
 
         .line{
