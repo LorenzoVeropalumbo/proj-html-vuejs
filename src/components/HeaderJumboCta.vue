@@ -47,11 +47,12 @@ export default {
   .header-bottom{
     
     .jumbtron{
-      height: 1010px;
+      height: calc(100vh - 150px);
       width: 100%;
       background-image: url("../assets/img/home-slider-62528242.jpg");
       background-position: top;
-      background-repeat: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
       position: relative;
 
       .insection-right{
@@ -139,7 +140,7 @@ export default {
     }
     
     .cta{
-      height: 150px;
+      padding: 75px 0;
       background-color: $cta-bg-color;
       position: relative;
 

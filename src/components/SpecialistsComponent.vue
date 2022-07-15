@@ -50,7 +50,7 @@ export default {
   @import "../style/variables.scss";
 
   section{
-    padding: 220px 0 50px;
+    padding: 220px 0 0px;
     position: relative;
     text-align: center;
     
@@ -77,7 +77,7 @@ export default {
     }
 
     .schedule-container{
-      padding: 70px 20px;
+      padding: 70px 20px 0;
       display: flex;
       justify-content: center;
 

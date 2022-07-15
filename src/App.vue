@@ -4,6 +4,7 @@
 
     <main>
       <SpecialistsComponent />
+      <PanoramaImage />
     </main>
   </div>
 </template>
@@ -12,12 +13,14 @@
 
 import HeaderComponent from "./components/HeaderComponent.vue";
 import SpecialistsComponent from "./components/SpecialistsComponent.vue";
+import PanoramaImage from "./components/PanoramaImage.vue";
 
 export default {
   name: 'App',
   components: {
    HeaderComponent,
    SpecialistsComponent,
+   PanoramaImage,
   },
   data(){
     return{
