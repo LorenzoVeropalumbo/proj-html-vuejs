@@ -57,24 +57,25 @@ export default {
       .insection-right{
         position: absolute;
         top: 20px;
-        right: 20px;     
+        right: 20px;   
+        font-family: Arial, Helvetica, sans-serif;  
 
         div{
           background-color: white;
           border-radius: 10px;
           margin: 8px;
-          height: 90px;
-          width: 90px;
+          height: 80px;
+          width: 80px;
           padding: 10px 0;
 
           i{
-            font-size: 40px;
-            padding: 5px 25px 10px;
+            font-size: 30px;
+            padding: 5px 25px 3px;
             color: #33475b;
           }
 
           > .green{
-            font-size: 40px;
+            font-size: 35px;
             color: #66bc7b;
             font-weight: 700;
             display: block;
@@ -82,14 +83,13 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-left: 10px;
-            padding-bottom: 5px;
-            font-family: Arial, Helvetica, sans-serif;
-
+            padding-left: 5px;
+            padding-bottom: 3px;
+            
             .pos-top{
               position: absolute;
-              left: 20%;
-              top: 10%;
+              left: 15%;
+              top: 5%;
               font-size: 20px;
             }
           }
