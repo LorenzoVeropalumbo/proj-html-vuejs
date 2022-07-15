@@ -1,16 +1,30 @@
 // IMPORT
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "@/style/variables.scss";
 
 // COMMON
 body{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: $text-main-color;
 }
 
-img{
-  display: block;
-  width: 100%;
+.alternative-text{
+  font-family: 'Raleway', sans-serif;
+}
+
+.text-center{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// BUTTONS
+.button{
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 // RESET
@@ -18,4 +32,13 @@ img{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
