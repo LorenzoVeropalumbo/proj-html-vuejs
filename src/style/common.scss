@@ -8,17 +8,26 @@
 body{
   font-family: 'Montserrat', sans-serif;
   color: $text-main-color;
+
+  /* width */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-.alternative-text{
-  font-family: 'Raleway', sans-serif;
-}
+  // For the alternative texts
+  .alternative-text{
+    font-family: 'Raleway', sans-serif;
+  }
 
+// image reset
 img{
   width: 100%;
   display: block;
+  height: auto;
 }
 
+// align center text in the image
 .text-center{
   text-align: center;
   position: absolute;
@@ -27,17 +36,123 @@ img{
   transform: translate(-50%, -50%);
 }
 
+// Sections Style
+.section-title{     
+  font-size: 35px;
+  color: $text-main-color;
+}
+
+.section-subtitle{
+  width: 45%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 35px;
+  color: $text-light-grey;
+}
+
 .line{
   height: 2px;
-  width: 260px;
+  width: 220px;
   background-color: $bg-button-yellow;
-  margin: 2rem auto 2.8rem;
+  margin: 1.6rem auto;
 }
+
+// Section devider structure
+.divider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  
+  .line{
+    margin: 0 8rem;
+    width: 380px;
+  }
+
+  span{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+}
+
+// overlay effect
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: $cta-bg-color;
+}
+
+.text-overlay {
+  color: $text-white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+
+.overlay-cont{
+  position: relative;
+
+  &:hover .overlay {
+    opacity: 1;
+  }
+
+  .dot {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 6px;
+    color: $cta-bg-color;
+    background-color: $main-bg-color;
+  }
+
+  .overlay-subtext{
+    padding: 10px 0;
+    font-size: 10px;
+  }
+} 
 
 // BUTTONS
 .button{
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.yellow-btn{
+  background-color: $bg-button-yellow;
+  color: $text-main-color;
+
+  &:hover{
+    background-color: $bg-button-grey;
+    color: $text-white;
+  }
+}
+
+.grey-btn{
+  background-color: $bg-button-grey;
+  color: $text-white;
+
+  &:hover{
+    background-color: $bg-button-yellow;
+    color: $text-main-color;
+  }
 }
 
 // RESET

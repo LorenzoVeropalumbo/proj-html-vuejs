@@ -47,7 +47,7 @@ export default {
   .header-bottom{
     
     .jumbtron{
-      height: calc(100vh - 150px);
+      height: calc(100vh - 120px);
       width: 100%;
       background-image: url("../assets/img/home-slider-62528242.jpg");
       background-position: top;
@@ -107,31 +107,23 @@ export default {
         color: $text-white;
 
         #big-text{
-          font-size: 65px;
+          font-size: 55px;
           text-transform: uppercase;
           font-weight: 600;
         }
 
         .alternative-text{
           padding-block: 30px;
-          font-size: 28px;
+          font-size: 24px;
           color: $text-subtitle;
         }
         
         .button-container{
           padding-top: 50px;
-          font-size: 20px;
+          font-size: 16px;
 
-          .yellow-btn{
-            background-color: $bg-button-yellow;
+          .button{
             padding: 1.3rem 2.7rem;
-            color: $text-main-color;
-            margin: 0.9rem;
-          }
-          .grey-btn{
-            background-color: $bg-button-grey;
-            padding: 1.3rem 2.7rem;
-            color: $text-white;
             margin: 0.9rem;
           }
         }      
@@ -144,20 +136,29 @@ export default {
       position: relative;
 
       .alternative-text{
-        font-size: 38px;
+        font-size: 30px;
       }
 
       .btn-relative-pos{
         position: absolute;
-        top: calc(100% - 13px);
+        top: calc(100% - 27px);
         left: 50%;
         transform: translate(-50%, 0);
+        background-color: #fff;
+        padding: 15px 2px;
+        z-index: 9999;
+        
+        .button{
+          padding: 0.8rem 2rem;    
+        }
 
-        .grey-btn{
-          background-color: $bg-button-grey;
-          padding: 0.8rem 2rem;
-          color: $text-white;
-          border: 3px solid white;
+        &:hover{
+          background: black;
+
+          .grey-btn{
+            background-color: white;
+            color: black;
+          }
         }
       }
     }

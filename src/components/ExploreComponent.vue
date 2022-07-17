@@ -9,14 +9,44 @@
     </div>
 
     <div class="image-container">
-      <div><img src="../assets/img/project2-featured-15013609.jpg" alt=""></div>
-      <div><img src="../assets/img/project1-featured-294276386.jpg" alt=""></div>
-      <div><img src="../assets/img/project3-featured-189023420.jpg" alt=""></div>
+      <div class="overlay-cont">
+        <img src="../assets/img/project2-featured-15013609.jpg" alt="">
+        <div class="overlay">
+          <div class="text-overlay">
+            <a href="#"><i class="fa-solid fa-link dot"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass dot"></i></a>
+            <div><span>Florida Health Facility</span></div>
+            <div class="overlay-subtext"><span>Commercial</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-cont">
+        <img src="../assets/img/project1-featured-294276386.jpg" alt="">
+        <div class="overlay">
+          <div class="text-overlay">
+            <a href="#"><i class="fa-solid fa-link dot"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass dot"></i></a>
+            <div><span>Florida Health Facility</span></div>
+            <div class="overlay-subtext"><span>Commercial</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-cont">
+        <img src="../assets/img/project3-featured-189023420.jpg" alt="">
+        <div class="overlay">
+          <div class="text-overlay">
+            <a href="#"><i class="fa-solid fa-link dot"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass dot"></i></a>
+            <div><span>Florida Health Facility</span></div>
+            <div class="overlay-subtext"><span>Commercial</span></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="divider">
       <div class="line"></div>
-      <span>view all project</span>
+      <span><a href="">view all project</a></span>
       <div class="line"></div>
     </div>
   </section>
@@ -35,48 +65,21 @@ export default {
     position: relative;
     text-align: center;
     padding-bottom: 30px;
-    
-    .section-title{
-      font-size: 40px;
-      color: $text-main-color;
-    }
-
-    .section-subtitle{
-      width: 45%;
-      margin: 0 auto;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 45px;
-      color: $text-light-grey;
-    }
 
     .image-container{
       padding: 70px 20px 0;
       display: flex;
       justify-content: center;
 
-      div{
+      .overlay-cont{
         margin: 0 20px;
-        width: 20%;
-      }
+        width: 20%;    
+      }  
     }
 
-    .divider{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 8rem 0;
-      
+    .divider{    
       .line{
-        margin: 0 10rem;
-        width: 480px;
         background-color: $bg-button-light-grey;
-      }
-
-      span{
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 18px;
       }
     }
   }

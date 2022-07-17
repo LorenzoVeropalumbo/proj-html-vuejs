@@ -58,20 +58,6 @@ export default {
     position: relative;
     text-align: center;
     background-color: $bg-button-light-grey;
-    
-    .section-title{
-      font-size: 40px;
-      color: $text-main-color;
-    }
-
-    .section-subtitle{
-      width: 45%;
-      margin: 0 auto;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 45px;
-      color: $text-light-grey;
-    }
 
     .schedule-container{
       padding: 70px 20px 0;
@@ -79,17 +65,17 @@ export default {
       justify-content: center;
 
       .schedule{
-        width: 15%;
+        width: 18%;
         margin: 10px;
         border-radius: 15px;
 
         .dot {
-          height: 150px;
-          width: 150px;
-          line-height: 150px;
+          height: 120px;
+          width: 120px;
+          line-height: 120px;
           border-radius: 50%;
           display: inline-block;
-          font-size: 70px;
+          font-size: 50px;
           margin: 20px 0;
           color: $text-white;
         }
@@ -118,13 +104,13 @@ export default {
         }
 
         span{
-          font-size: 20px;
+          font-size: 15px;
           font-weight: 400;
         }
         
         p{
           padding-top: 10px;
-          font-size: 18px;
+          font-size: 15px;
           line-height: 36px;
           font-weight: 400;
         }     

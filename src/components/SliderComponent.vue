@@ -41,23 +41,25 @@ export default {
       background-position: center;
       background-size: 100%;
       width: 100%;
-      height: 1200px;
+      height: 950px;
 
       .standard-wave{
         position: absolute;
         bottom: -5px;
+        right: 0px;
       }
 
       .rotate-wave{
         position: absolute;
         top: -5px;
+        right: 0px;
         transform: rotate(180deg);
       }
     }
 
     .text-center{
       display: flex;
-      width: 38%; 
+      width: 45%; 
       justify-content: center;
       align-items: center;
       font-family: 'Raleway', sans-serif;
@@ -68,34 +70,37 @@ export default {
         color: $text-white;
 
         .section-title{
-          font-size: 42px;
+          font-size: 35px;
+          color: $text-white;
         }
 
         img{
           margin: 0 auto;
           vertical-align: middle;
-          width: 180px;
+          width: 160px;
           border-radius: 450px;
         }
 
         .section-subtitle{
-          font-size: 25px;
+          width: 88%;
           font-family: 'Raleway', sans-serif;
           font-style: italic;
-          line-height: 40px;
           padding: 38px 0;
+          letter-spacing: 2px;
+          color: white;
         }
 
         .review-name{
           font-weight: 800;
-          font-size: 22px;
+          font-size: 16px;
           text-transform: uppercase;
+          letter-spacing: 2px;
+          line-height: 21px;
 
           .small-circle{
-            font-size: 12px;
-            line-height: 26px;
-            padding: 2px 8px;
-            vertical-align: text-bottom;  
+            font-size: 10px;
+            vertical-align: bottom;
+            padding: 0 2px;
           }
         }
 

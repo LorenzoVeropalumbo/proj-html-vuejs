@@ -73,19 +73,19 @@ export default {
         color: $text-subtitle;
 
         i{
-          font-size: 90px;
+          font-size: 70px;
         }
 
         h6{
-          font-size: 80px;
-          padding: 10px 0;
+          font-size: 55px;
+          padding: 0 0 10px;
           font-weight: 500;
         }
 
         span{
           font-family: 'Montserrat', sans-serif;
           color: $text-white;
-          font-size: 20px;
+          font-size: 16px;
           text-transform: uppercase;
           font-weight: 500;
         }

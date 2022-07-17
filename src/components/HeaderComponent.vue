@@ -40,7 +40,7 @@ export default {
   @import "../style/variables.scss";
 
   .header-top{
-    height: 160px;
+    height: 120px;
     background-color: $main-bg-color;
 
     .header-top-container{
@@ -52,14 +52,14 @@ export default {
       height: 100%;
 
       img{
-        width: 220px;      
+        width: 200px;      
       }
 
       ul{
         display: flex;
         align-items: center;
         text-transform: uppercase;
-        font-size: 18px;       
+        font-size: 14px;       
 
         li{
           padding: 0 1.8rem;
@@ -72,6 +72,11 @@ export default {
           .button{
             background-color: $bg-button-yellow;
             padding: 0.9rem 2.2rem;
+
+            &:hover{
+              background-color: $bg-button-grey;
+              color: $text-white;
+            }
           }
         }
       }

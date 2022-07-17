@@ -10,7 +10,17 @@
 
     <div class="section-container">
       <div class="single-section">
-        <img src="../assets\img\blog-post-134132600-800x482.jpg" alt="">
+        <div class="overlay-cont">
+          <img src="../assets\img\blog-post-134132600-800x482.jpg" alt="">
+          <div class="overlay">
+            <div class="text-overlay">
+              <a href="#"><i class="fa-solid fa-link dot"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass dot"></i></a>
+              <div><span>Redeveloping Florda's Remore Southern Coast</span></div>
+              <div class="overlay-subtext"><span>Architecture, Buildings, Construction, News</span></div>
+            </div>
+          </div>
+        </div>  
         <div class="section-text">
           <span class="section-title">Redeveloping Florda's Remore Southern Coast</span>
           <span class="date">December 7th, 2015</span>
@@ -19,7 +29,17 @@
         </div>
       </div>
       <div class="single-section">
-        <img src="../assets\img\blog-post-92486644-800x482.jpg" alt="">
+        <div class="overlay-cont">      
+          <img src="../assets\img\blog-post-92486644-800x482.jpg" alt="">
+          <div class="overlay">
+            <div class="text-overlay">
+              <a href="#"><i class="fa-solid fa-link dot"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass dot"></i></a>
+              <div><span>How We Manage Large Construction Project</span></div>
+              <div class="overlay-subtext"><span>Architecture, Buildings, Construction, News</span></div>
+            </div>
+          </div>
+        </div>       
         <div class="section-text">
           <span class="section-title">How We Manage Large Construction Project</span>
           <span class="date">December 7th, 2015</span>
@@ -28,7 +48,17 @@
         </div>
       </div>
       <div class="single-section">
-        <img src="../assets\img\blog-post-332773904-800x482.jpg" alt="">
+        <div class="overlay-cont">      
+          <img src="../assets\img\blog-post-332773904-800x482.jpg" alt="">
+          <div class="overlay">
+            <div class="text-overlay">
+              <a href="#"><i class="fa-solid fa-link dot"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass dot"></i></a>
+              <div><span>How We Manage Large Construction Project</span></div>
+              <div class="overlay-subtext"><span>Architecture, Buildings, Construction, News</span></div>
+            </div>
+          </div>
+        </div> 
         <div class="section-text">
           <span class="section-title">Future proofing a modern home</span>
           <span class="date">December 6th, 2015</span>
@@ -40,7 +70,7 @@
 
     <div class="divider">
       <div class="line"></div>
-      <span>view all articles</span>
+      <span><a href="#">view all articles</a></span>
       <div class="line"></div>
     </div>
   </section>
@@ -59,21 +89,7 @@ export default {
     position: relative;
     text-align: center;
     background-color: $bg-button-light-grey;
-    
-    .section-title{
-      font-family: 'Raleway', sans-serif;
-      font-size: 40px;
-      color: $text-main-color;
-    }
-
-    .section-subtitle{
-      width: 45%;
-      margin: 0 auto;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 45px;
-      color: $text-light-grey;
-    }
+    font-family: 'Raleway', sans-serif;
 
     .section-container{
       padding: 70px 20px 0;
@@ -90,14 +106,15 @@ export default {
           text-align: left;
 
           .section-title{
-            font-size: 30px;
-            line-height: 45px;
+            font-size: 24px;
+            line-height: 35px;
           }
 
           .date{
-            font-size: 15px;
+            font-size: 10px;
             display: block;
-            padding-top: 15px;
+            padding-top: 5px;
+            font-weight: 600;
           }
 
           .line{
@@ -108,28 +125,14 @@ export default {
 
           .paragraph{
             line-height: 40px;
-            font-size: 18px;
+            font-size: 16px;
           }
         }
       }
     }
-
-    .divider{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 8rem 0;
-      
+    .divider{    
       .line{
-        margin: 0 10rem;
-        width: 480px;
         background-color: $main-bg-color;
-      }
-
-      span{
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 18px;
       }
     }
   }

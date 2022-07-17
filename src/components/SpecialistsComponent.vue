@@ -9,28 +9,36 @@
     </div>
     <div class="schedule-container">
       <div class="schedule">
-        <span class="dot" ><i class="fa-solid fa-building schedule-img"></i></span>
-        <div>
-          <span>Buildings</span>
-          <p>Quis autem vel eum lure reprederit qui in ea voluptate velit esse quam nikil molestiae consequatur. </p>
-        </div>
+        <div class="overlay-cont">      
+          <span class="round" ><i class="fa-solid fa-building schedule-img"></i></span>
+          <div>
+            <span>Buildings</span>
+            <p>Quis autem vel eum lure reprederit qui in ea voluptate velit esse quam nikil molestiae consequatur. </p>
+          </div>
+          <div class="overlay">
+            <div class="text-overlay">
+              <div><span class="title">How We Manage Large Construction Project</span></div>
+              <div><span class="title">Architecture, Buildings, Construction, News</span></div>
+            </div>
+          </div>
+        </div> 
       </div>
       <div class="schedule">
-        <span class="dot" ><i class="fa-solid fa-arrows-rotate"></i></span>
+        <span class="round" ><i class="fa-solid fa-arrows-rotate"></i></span>
         <div>
           <span>Renovate</span>
           <p>Quis autem vel eum lure reprederit qui in ea voluptate velit esse quam nikil molestiae consequatur. </p>
         </div>
       </div>
       <div class="schedule">
-        <span class="dot" ><i class="fa-solid fa-house-chimney"></i></span>
+        <span class="round" ><i class="fa-solid fa-house-chimney"></i></span>
         <div>
           <span>Construct</span>
           <p>Quis autem vel eum lure reprederit qui in ea voluptate velit esse quam nikil molestiae consequatur. </p>
         </div>
       </div>
       <div class="schedule">
-        <span class="dot" ><i class="fa-solid fa-truck"></i></span>
+        <span class="round" ><i class="fa-solid fa-truck"></i></span>
         <div>
           <span>Excluisive</span>
           <p>Quis autem vel eum lure reprederit qui in ea voluptate velit esse quam nikil molestiae consequatur. </p>
@@ -53,21 +61,6 @@ export default {
     padding: 220px 0 0px;
     position: relative;
     text-align: center;
-    
-    
-    .section-title{
-      font-size: 40px;
-      color: $text-main-color;
-    }
-
-    .section-subtitle{
-      width: 45%;
-      margin: 0 auto;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 45px;
-      color: $text-light-grey;
-    }
 
     .schedule-container{
       padding: 70px 20px 0;
@@ -80,25 +73,34 @@ export default {
         margin: 10px;
         border-radius: 15px;
 
-        .dot {
+        .round {
           height: 70px;
           width: 70px;
-          line-height: 72px;
+          line-height: 70px;
           border-radius: 50%;
           border: 2px solid #bbb;
           display: inline-block;
           font-size: 25px;
           margin: 20px 0;
         }
+        
+        .text-overlay{
+          width: 95%;
+          
+          .title{
+            font-size: 16px;
+          }
+        }
+       
 
         span{
-          font-size: 42px;
+          font-size: 32px;
         }
         
         p{
-          padding: 20px  0 30px;
-          font-size: 18px;
-          line-height: 36px;
+          padding: 20px  15px 30px;
+          font-size: 16px;
+          line-height: 30px;
         }     
       }
     }

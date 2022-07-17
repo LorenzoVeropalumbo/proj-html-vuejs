@@ -9,8 +9,11 @@
       <OurCoreComponent />
       <SliderComponent />
       <LatestNewsComponent />
-      <ExploreComponent />
+      <TrustedPartnerComponent />
+      <CtaImage />
     </main>
+
+    <FooterComponent />
   </div>
 </template>
 
@@ -23,6 +26,9 @@ import ExploreComponent from "./components/ExploreComponent.vue";
 import OurCoreComponent from "./components/OurCoreComponent.vue";
 import SliderComponent from "./components/SliderComponent.vue";
 import LatestNewsComponent from "./components/LatestNewsComponent.vue";
+import TrustedPartnerComponent from "./components/TrustedPartnerComponent.vue";
+import CtaImage from "./components/CtaImage.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 export default {
   name: 'App',
   components: {
@@ -33,6 +39,9 @@ export default {
    OurCoreComponent,
    SliderComponent,
    LatestNewsComponent,
+   TrustedPartnerComponent,
+   CtaImage,
+   FooterComponent,
   },
   data(){
     return{
@@ -43,6 +52,31 @@ export default {
         },
         {
           active: false,
+          text: 'about',
+        },
+        {
+          active: false,
+          text: 'services',
+        },
+        {
+          active: false,
+          text: 'work',
+        },
+        {
+          active: false,
+          text: 'articles',
+        },
+        {
+          button: true,
+          active: false,
+          text: 'get quote',
+        }
+      ],
+      footerMenu: [
+        {
+          image: '../assets/img/footer-logo.png',
+        },
+        {
           text: 'about',
         },
         {
