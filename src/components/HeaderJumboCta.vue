@@ -144,7 +144,7 @@ export default {
         top: calc(100% - 27px);
         left: 50%;
         transform: translate(-50%, 0);
-        background-color: #fff;
+        background-color: $main-bg-color;
         padding: 15px 2px;
         z-index: 9999;
         
@@ -156,7 +156,7 @@ export default {
           background: black;
 
           .grey-btn{
-            background-color: white;
+            background-color: $main-bg-color;
             color: black;
           }
         }

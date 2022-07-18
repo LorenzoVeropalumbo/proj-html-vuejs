@@ -34,7 +34,8 @@ export default {
   @import "../style/variables.scss";
 
   section{
-    color: white;
+    color: #fff;
+    position: relative;
 
     .img{      
       background-image: url("../assets/img/about-call-to-action-57862405.jpg");
@@ -42,7 +43,7 @@ export default {
       background-position: bottom -170px right -130px;
       // background-size: 100%;
       width: 100%;
-      height: 420px;
+      padding-block: 140px;
       
       .flex-footer{
         display: flex;
@@ -54,7 +55,7 @@ export default {
           width: 35%;
           
           .section-title{
-            color: white;
+            color: $text-white;
             font-size: 28px;
             text-transform: capitalize;
           }

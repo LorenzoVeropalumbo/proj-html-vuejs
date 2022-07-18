@@ -2,6 +2,7 @@
   <section>
     <div class="img">
       <img class="standard-wave" src="../assets/img/wave2.svg" alt="nomal-wave">
+      <img :src="slides[currentActiveElement].image" :alt="slides[currentActiveElement].alt">
       <img class="rotate-wave" src="../assets/img/wave2.svg" alt="nomal-wave">
     </div>
 
@@ -9,14 +10,14 @@
       <div class="info">
         <span class="section-title">Our Home Owners Say</span>
         <div class="line"></div>
-        <img src="../assets\img\home-testimonial-113165296.jpg" alt="testimonial 1">
+        <img :src="slides[currentActiveElement].imageTestimonial" :alt="slides[currentActiveElement].alt">
         <p class="section-subtitle">
-          "No man but feels more of a man in the world if he have but a bit ok ground that he can call his own. However small it is on the surface, it is four thousand miles deep; and that is a very handsome property."
+          &#34; {{ slides[currentActiveElement].testimonialText }} &#34;
         </p>
-        <span class="review-name">Harry smith <span class="small-circle">&#9679;</span> new home owner </span>
+        <span class="review-name">{{ slides[currentActiveElement].testimonialName }} <span class="small-circle">&#9679;</span> new home owner </span>
         <ul class="silder-circle">
-          <li class="circle-full"></li>
-          <li class="circle-empty"></li>
+          <li v-for="(slide,index) in slides" :key="index"  @click="clickSlides(index)" class="thumb" :class="{'active': index === currentActiveElement}">
+          </li>
         </ul>
       </div>   
     </div>
@@ -26,6 +27,33 @@
 <script>
 export default {
   name:"SliderComponent",
+  data(){
+    return{
+      currentActiveElement: 0,
+
+      slides: [
+        {
+          image: require('../assets/img/home-parallax-144609983.jpg'),
+          imageTestimonial: require("../assets/img/home-testimonial-113165296.jpg"),
+          testimonialName: "Clara smith",
+          testimonialText: "No man but feels more of a man in the world if he have but a bit ok ground that he can call his own. However small it is on the surface, it is four thousand miles deep; and that is a very handsome property.",
+          alt: "home"
+        },
+        {
+          image: require('../assets/img/r-architecture-2gDwlIim3Uw-unsplash-uai-2560x1920.jpg'),
+          imageTestimonial: require( "../assets/img/home-testimonial-84268399.jpg"),
+          testimonialName: "Harry Potter",
+          testimonialText: "Se la vita ti da limoni, fatti una limonata",
+          alt: "home"
+        },
+      ]
+    }
+  },
+  methods:{
+    clickSlides(index){
+      this.currentActiveElement = index;
+    }
+  }
 }
 </script>
 
@@ -36,12 +64,7 @@ export default {
     position: relative;
 
     .img{      
-      background-image: url("../assets/img/home-parallax-144609983.jpg");
-      background-repeat: no-repeat;  
-      background-position: center;
-      background-size: 100%;
-      width: 100%;
-      height: 950px;
+      height: 1000px;
 
       .standard-wave{
         position: absolute;
@@ -87,7 +110,7 @@ export default {
           font-style: italic;
           padding: 38px 0;
           letter-spacing: 2px;
-          color: white;
+          color: $text-white;
         }
 
         .review-name{
@@ -111,20 +134,18 @@ export default {
 
           li{
             margin-right: 10px;
+            cursor: pointer;
           }
 
-          .circle-empty{
+          .thumb{
             width: 15px;
             height: 15px;
-            border: 1px solid white;
+            border: 1px solid $text-white;
             border-radius: 50%;
-          }
 
-          .circle-full{
-            width: 15px;
-            height: 15px;
-            background-color: white;
-            border-radius: 50%;
+            &.active{
+              background-color: $text-white;
+            }
           }
         }
       }

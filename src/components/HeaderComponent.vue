@@ -8,8 +8,9 @@
         <nav>
           <ul>
             <!-- MENU LIST ITEM -->
-            <li v-for="(voice,index) in navMenu" :key="index">
-              <a href="#" :class="{ active : voice.active, button : voice.button }" >{{ voice.text }}</a>
+            <li v-for="(voice,index) in navMenu" :key="index" @click.prevent="setActiveElement(index)">
+              <a href="#" :class="{ active : index === currentActiveElement, button : voice.button }" >{{ voice.text }}</a>
+              <i class="fa-solid fa-caret-down" v-if="index === currentActiveElement"></i>
             </li>
           </ul>
         </nav>
@@ -31,6 +32,23 @@ export default {
   },
   components:{
     HeaderJumboCta,
+  },
+  data(){
+    return{
+      currentActiveElement: 0,
+    }
+  },
+  methods:{
+    setActiveElement(index){
+      if(index === 5){
+        this.currentActiveElement = null;
+        return null;
+      }
+
+      if(index !== this.currentActiveElement){
+        this.currentActiveElement = index;
+      }
+    }
   }
   
 }
@@ -63,6 +81,8 @@ export default {
 
         li{
           padding: 0 1.8rem;
+          line-height: 120px;
+          position: relative;
 
           .active{
             color: $active-text;
@@ -77,6 +97,16 @@ export default {
               background-color: $bg-button-grey;
               color: $text-white;
             }
+          }
+
+          i{
+            position: absolute;
+            z-index: 10;
+            font-size: 1.7rem;
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%,-45%);
+            color: $text-white;
           }
         }
       }

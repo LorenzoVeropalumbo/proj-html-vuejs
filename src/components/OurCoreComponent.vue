@@ -9,33 +9,41 @@
     </div>
     <div class="schedule-container">
       <div class="schedule">
-        <span class="dot cyan"><i class="fa-solid fa-house-chimney"></i></span>
-        <div>
-          <span>Great Service</span>
+        <div class="hover-icon">
+          <span class="dot cyan"><i class="fa-solid fa-house-chimney"></i></span>
+          <span class="title">Great Service</span>
+        </div>         
+        <div>          
           <div class="line"></div>
           <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>
         </div>
       </div>
       <div class="schedule">
-        <span class="dot blue" ><i class="fa-solid fa-gear"></i></span>
-        <div>
-          <span>Highest Standards</span>
+        <div class="hover-icon">
+          <span class="dot blue" ><i class="fa-solid fa-gear"></i></span>
+          <span class="title">Highest Standards</span>
+        </div>         
+        <div>         
           <div class="line"></div>
           <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>
         </div>
       </div>
       <div class="schedule">
-        <span class="dot orange" ><i class="fa-solid fa-house-chimney"></i></span>
-        <div>
-          <span>Professional Team</span>
+        <div class="hover-icon">
+          <span class="dot orange" ><i class="fa-solid fa-users"></i></span>
+          <span class="title">Professional Team</span>
+        </div>   
+        <div>       
           <div class="line"></div>
           <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>
         </div>
       </div>
       <div class="schedule">
-        <span class="dot green" ><i class="fa-solid fa-truck"></i></span>
-        <div>
-          <span>Creative Solutions </span>
+        <div class="hover-icon">
+          <span class="dot green" ><i class="fa-solid fa-truck"></i></span>
+          <span class="title">Creative Solutions </span>
+        </div>       
+        <div>     
           <div class="line"></div>
           <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>
         </div>
@@ -77,7 +85,18 @@ export default {
           display: inline-block;
           font-size: 50px;
           margin: 20px 0;
-          color: $text-white;
+          color: $text-white;          
+        }
+        .title{
+          display: block;
+        }
+
+        .hover-icon:hover .dot{
+          background-color: $cta-bg-color;
+        }
+
+        .hover-icon:hover .title{
+          color: $active-text;
         }
 
         .line{

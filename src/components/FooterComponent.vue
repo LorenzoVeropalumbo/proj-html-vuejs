@@ -53,8 +53,20 @@
       <div class="col">
         <div class="card">
           <h5>Find us</h5>
-          <img style="width: 70%;" src="../assets\img\Google Maps - Opera 17_07_2022 17_14_32.png" alt="">
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="350" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=london,notting&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br><a href="https://www.embedgooglemap.net"></a></div></div>
         </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-bottom">
+        <div>copyright 2012 - 2015 Avada theme by <b>theme fusion</b> | all rights reserved | powered by <b>WorldPress</b></div>
+        <div>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="down-arrow"><a href="#"><i class="fa-solid fa-angle-up"></i></a></div>
       </div>
     </div>
   </footer>
@@ -80,6 +92,7 @@
     .col{
       width: 25%;
       padding: 0 25px;
+
       .avada-footer-logo{
         width: 50%;
       }
@@ -141,6 +154,10 @@
           img{
             width: 5%;
           }
+
+          .mapouter{
+            width: 100%;
+          }
         }
 
         .link-img{
@@ -179,4 +196,39 @@
     }
   }
 
+  .footer-bottom{
+    background-color: #111111;
+    padding-block: 1.5rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    
+    .container-bottom{
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      i{
+        padding: 0 10px;
+        font-size: 1.1rem;
+      }
+
+      .down-arrow{
+        position: absolute;
+        color: $text-white;
+        left: 98.4%;
+        top: 50%;
+        background-color: #303030;
+        opacity: 0.8;
+        border-radius: 5px;
+        padding: 12px 8px;
+
+        i{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }  
 </style>
