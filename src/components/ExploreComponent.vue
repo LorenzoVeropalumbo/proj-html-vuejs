@@ -22,11 +22,12 @@
       </div>
     </div>
 
-    <div class="divider">
+    <div class="divider" v-if="!loader">
       <div class="line"></div>
-      <span><a href="">view all project</a></span>
+      <span @click.prevent="createLoader()"><a href="#">view all articles</a></span>
       <div class="line"></div>
     </div>
+    <div class="divider" v-if="loader"><div class="loader"></div></div>
   </section>
 </template>
 
@@ -36,6 +37,16 @@ export default {
   props:{
     ExploreWork: Object,
   },
+  data(){
+    return{
+      loader: false,
+    }
+  },
+  methods:{
+    createLoader(){
+      this.loader = true;
+    }
+  }
 }
 </script>
 

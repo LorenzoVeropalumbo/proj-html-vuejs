@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderComponent :navMenu="navMenu" />
     <MainComponent />
-    <FooterComponent />
+    <FooterComponent :footerMenu="footerMenu"/>
   </div>
 </template>
 
@@ -47,6 +47,32 @@ export default {
           active: false,
           text: 'get quote',
         }
+      ],
+      footerMenu: [
+        {
+          icon:"fa-solid fa-globe",
+          texts: ["Corporate Location","1600 Amphitheatre Parkway","London WC1 1BA"]
+        },
+        {
+          icon:"fa-solid fa-house-chimney",
+          texts: ["Residential Location","9521 broadsberry Avenue","Paddington RC7 9ZA"]
+        },
+        {
+          icon:"fa-solid fa-phone-flip",
+          texts: ["1.800.458.556 / 1.800.532.2112"]
+        },
+        {
+          icon:"fa-regular fa-envelope",
+          texts: ["info@your-domain.com"]
+        },
+        {
+          icon:"fa-regular fa-clock",
+          texts: ["Monday - Friday: 9:00 AM - 6:00 PM"]
+        },
+        {
+          icon:"fa-regular fa-clock",
+          texts: ["Saturday - Sunday: 9:00 AM - 12:00 PM"]
+        },
       ],
     }
   }

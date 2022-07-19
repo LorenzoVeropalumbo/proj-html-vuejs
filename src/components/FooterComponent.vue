@@ -41,12 +41,10 @@
         <div class="card">
           <h5>Contact us today</h5>
           <ul class="fa-ul" style="--fa-li-margin: 1em;">
-            <li><span class="fa-li"><i class="fa-solid fa-globe"></i></span><p>Corporate Location<br>1600 Amphitheatre Parkway<br>London WC1 1BA</p></li>
-            <li><span class="fa-li"><i class="fa-solid fa-house-chimney"></i></span><p>Residential Location<br>9521 broadsberry Avenue<br>Paddington RC7 9ZA</p></li>
-            <li><span class="fa-li"><i class="fa-solid fa-phone-flip"></i></span><p>1.800.458.556 / 1.800.532.2112</p></li>
-            <li><span class="fa-li"><i class="fa-regular fa-envelope"></i></span><p>info@your-domain.com</p></li>
-            <li><span class="fa-li"><i class="fa-regular fa-clock"></i></span><p>Monday - Friday: 9:00 AM - 6:00 PM</p></li>
-            <li><span class="fa-li"><i class="fa-regular fa-clock"></i></span><p>Saturday - Sunday: 9:00 AM - 12:00 PM</p></li>
+            <li v-for="(element,index) in footerMenu" :key="index">
+              <span class="fa-li"><i :class="element.icon"></i></span>
+              <span class="d-block" v-for="(text,index) in element.texts" :key="index">{{text}}</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -76,6 +74,9 @@
   
   export default {
     name:"FooterComponent",
+    props:{
+      footerMenu:Array,
+    }
   }
 </script>
 
@@ -104,6 +105,7 @@
 
       .button{
         padding: 0.7rem 2rem;
+        font-size: 0.9rem;
       }
 
       h5{
@@ -192,6 +194,10 @@
         line-height: 1.3rem;
         font-weight: 600;
         padding: 4px 4px;
+
+        .d-block{
+          display: block;
+        }
       }
     }
   }

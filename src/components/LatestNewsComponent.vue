@@ -65,20 +65,33 @@
           <div class="line"></div>
           <p class="paragraph">Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed</p>
         </div>
+        
       </div>
     </div>
 
-    <div class="divider">
+    <div class="divider" v-if="!loader">
       <div class="line"></div>
-      <span><a href="#">view all articles</a></span>
+      <span @click.prevent="createLoader()"><a href="#">view all articles</a></span>
       <div class="line"></div>
     </div>
+    <div class="divider" v-if="loader"><div class="loader"></div></div>
   </section>
 </template>
 
 <script>
+
 export default {
   name: "LatestNewsComponent",
+  data(){
+    return{
+      loader: false,
+    }
+  },
+  methods:{
+    createLoader(){
+      this.loader = true;
+    }
+  }
 }
 </script>
 

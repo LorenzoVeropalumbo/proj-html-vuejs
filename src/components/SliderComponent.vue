@@ -16,7 +16,7 @@
         </p>
         <span class="review-name">{{ slides[currentActiveElement].testimonialName }} <span class="small-circle">&#9679;</span> new home owner </span>
         <ul class="silder-circle">
-          <li v-for="(slide,index) in slides" :key="index"  @click="clickSlides(index)" class="thumb" :class="{'active': index === currentActiveElement}">
+          <li v-for="(slide,index) in slides" :key="index"  @click="clickSlides(index)" @mouseenter="stopAutoplay()" @mouseleave="startAutoplay()" class="thumb" :class="{'active': index === currentActiveElement}">
           </li>
         </ul>
       </div>   
@@ -30,6 +30,7 @@ export default {
   data(){
     return{
       currentActiveElement: 0,
+      sliderAutoplay: null,
 
       slides: [
         {
@@ -43,7 +44,14 @@ export default {
           image: require('../assets/img/r-architecture-2gDwlIim3Uw-unsplash-uai-2560x1920.jpg'),
           imageTestimonial: require( "../assets/img/home-testimonial-84268399.jpg"),
           testimonialName: "Harry Potter",
-          testimonialText: "Se la vita ti da limoni, fatti una limonata",
+          testimonialText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, itaque. Quos a corrupti natus blanditiis voluptatum quisquam, alias eum velit mollitia inventore aperiam fuga accusamus placeat iste incidunt suscipit? Error.",
+          alt: "home"
+        },
+        {
+          image: require('../assets/img/TEST-CLUB-HOUSE-PARALLAX.jpg'),
+          imageTestimonial: require( "../assets/img/home-testimonial-84268399.jpg"),
+          testimonialName: "Mario Rossi",
+          testimonialText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at sint alias atque modi animi assumenda quidem harum maxime, ab nemo laboriosam quia deleniti eum nostrum illo mollitia consequatur voluptatibus.",
           alt: "home"
         },
       ]
@@ -52,8 +60,28 @@ export default {
   methods:{
     clickSlides(index){
       this.currentActiveElement = index;
+    },
+    showNextElement() {
+      // Se non sono ancora all'ultima chiave dell'array incremento
+      if(this.currentActiveElement < this.slides.length - 1) {
+        this.currentActiveElement++;
+      } else {
+        this.currentActiveElement = 0;
+      }
+    },
+    stopAutoplay() {
+    // Stoppare il setInterval
+      clearInterval(this.sliderAutoplay);
+      this.sliderAutoplay = null;
+    },
+    startAutoplay() {
+      this.sliderAutoplay = setInterval(this.showNextElement, 3000);
     }
+  },
+  mounted() {
+    this.startAutoplay();
   }
+  
 }
 </script>
 
