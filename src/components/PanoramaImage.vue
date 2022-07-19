@@ -1,10 +1,12 @@
 <template>
   <section>
+    <!-- Image container -->
     <div class="img">
       <img class="standard-wave" src="../assets/img/wave.svg" alt="nomal-wave">
       <img class="rotate-wave" src="../assets/img/wave.svg" alt="nomal-wave">
     </div>
 
+    <!-- Text -->
     <div class="text-center">
       <div class="info">
         <i class="fa-solid fa-suitcase"></i>

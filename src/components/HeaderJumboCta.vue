@@ -1,6 +1,7 @@
 <template>
   <div class="header-bottom">
     <div class="jumbtron">
+      <!-- Insection Right -->
       <div class="insection-right">
         <div>
           <i class="fa-solid fa-images"></i>
@@ -12,6 +13,7 @@
         </div>
       </div>
 
+      <!-- Text Jumbotron -->
       <div class="text-center">
         <div>
           <div id="big-text"><span>Building inspiring spaces</span></div>
@@ -23,6 +25,7 @@
         </div> 
       </div>
     </div>
+    <!-- Button banner yellow -->
     <div class="cta">
       <div class="text-center">
         <span class="alternative-text">Do You Have A Construction Project We Can Help With?</span>

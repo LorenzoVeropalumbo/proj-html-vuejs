@@ -39,11 +39,11 @@ export default {
 
     .img{      
       background-image: url("../assets/img/about-call-to-action-57862405.jpg");
-      // background-repeat: no-repeat;  
-      background-position: bottom -170px right -130px;
-      // background-size: 100%;
+      background-repeat: no-repeat;  
+      background-position: bottom -200px right 0;
+      background-size: 100%;
       width: 100%;
-      padding-block: 140px;
+      padding-block: 150px;
       
       .flex-footer{
         display: flex;

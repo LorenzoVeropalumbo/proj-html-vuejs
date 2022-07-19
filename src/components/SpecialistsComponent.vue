@@ -1,20 +1,24 @@
 <template>
   <section>
     <div>
+      <!-- Titles -->
       <span class="section-title">Specialists In Modern Construction</span>
       <div class="line"></div>
       <p class="section-subtitle">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
       </p>
     </div>
+    <!-- Container -->
     <div class="schedule-container">
       <div class="schedule">
         <div class="overlay-cont">      
           <span class="round" ><i class="fa-solid fa-building"></i></span>
           <div>
+            <!-- card text -->
             <span>Buildings</span>
             <p>Quis autem vel eum lure reprederit qui in ea voluptate velit esse quam nikil molestiae consequatur. </p>
           </div>
+          <!-- overlay effect -->
           <div class="overlay">
             <div class="text-overlay">
               <span class="title">ARTFULLY CRAFTED</span>
@@ -28,9 +32,11 @@
         <div class="overlay-cont">      
           <span class="round" ><i class="fa-solid fa-arrows-rotate"></i></span>
           <div>
+            <!-- card text -->
             <span>Renovate</span>
             <p>Quis autem vel eum lure reprederit qui in ea voluptate velit esse quam nikil molestiae consequatur. </p>
           </div>
+          <!-- overlay effect -->
           <div class="overlay">
             <div class="text-overlay">
               <span class="title">ARTFULLY CRAFTED</span>
@@ -44,9 +50,11 @@
         <div class="overlay-cont">      
           <span class="round" ><i class="fa-solid fa-house-chimney"></i></span>
           <div>
+            <!-- card text -->
             <span>Construct</span>
             <p>Quis autem vel eum lure reprederit qui in ea voluptate velit esse quam nikil molestiae consequatur. </p>
           </div>
+          <!-- overlay effect -->
           <div class="overlay">
             <div class="text-overlay">
               <span class="title">ARTFULLY CRAFTED</span>
@@ -60,9 +68,11 @@
         <div class="overlay-cont">      
           <span class="round"><i class="fa-solid fa-truck"></i></span>
           <div>
+            <!-- card text -->
             <span>Excluisive</span>
             <p>Quis autem vel eum lure reprederit qui in ea voluptate velit esse quam nikil molestiae consequatur. </p>
           </div>
+          <!-- overlay effect -->
           <div class="overlay">
             <div class="text-overlay">
               <span class="title">ARTFULLY CRAFTED</span>

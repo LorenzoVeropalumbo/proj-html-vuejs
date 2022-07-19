@@ -12,7 +12,7 @@
 </template>
 
 <script>
-
+// IMPORTS
 import SpecialistsComponent from "./SpecialistsComponent.vue";
 import PanoramaImage from "./PanoramaImage.vue";
 import ExploreComponent from "./ExploreComponent.vue";

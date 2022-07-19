@@ -85,6 +85,7 @@ export default {
     }
 
     .divider{
+      padding: 2rem 0 5rem;
       .line{
         background-color: $bg-button-light-grey;
       }

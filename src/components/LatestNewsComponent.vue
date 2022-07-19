@@ -117,6 +117,7 @@ export default {
           padding: 40px 20px;
           background-color: $main-bg-color;
           text-align: left;
+          height: 63%;
 
           .section-title{
             font-size: 24px;
