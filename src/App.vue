@@ -25,22 +25,64 @@ export default {
         {
           active: true,
           text: 'home',
+          liDynamic:[
+            {
+              text: 'info',
+              href: "#",
+            }
+          ]
         },
         {
           active: false,
           text: 'about',
+          liDynamic:[
+            {
+              text: 'Contact',
+              href: "#",
+            },
+            {
+              text: 'About',
+              href: "#",
+            }
+          ]
         },
         {
           active: false,
           text: 'services',
+          liDynamic:[
+            {
+              text: 'Quotes',
+              href: "#",
+            },
+            {
+              text: 'Info',
+              href: "#",
+            }
+          ]
         },
         {
           active: false,
           text: 'work',
+          liDynamic:[
+            {
+              text: 'Work',
+              href: "#",
+            },
+            {
+              text: 'Parnets',
+              href: "#",
+            }
+          ]
         },
         {
           active: false,
           text: 'articles',
+          liDynamic:[
+            {
+              text: 'Review',
+              href: "#slider-component",
+            },
+          ]
         },
         {
           button: true,

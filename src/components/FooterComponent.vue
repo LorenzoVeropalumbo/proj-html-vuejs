@@ -59,10 +59,10 @@
       <div class="container-bottom">
         <div>copyright 2012 - 2015 Avada theme by <b>theme fusion</b> | all rights reserved | powered by <b>WorldPress</b></div>
         <div>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-instagram"></i>
+          <a href="@"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="@"><i class="fa-brands fa-twitter"></i></a>
+          <a href="@"><i class="fa-brands fa-youtube"></i></a>
+          <a href="@"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="down-arrow"><a href="#"><i class="fa-solid fa-angle-up"></i></a></div>
       </div>

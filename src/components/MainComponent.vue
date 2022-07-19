@@ -43,6 +43,12 @@ export default {
         images:[
           require("../assets/img/project2-featured-15013609.jpg"),
           require("../assets/img/project1-featured-294276386.jpg"),
+          require("../assets/img/project3-featured-189023420.jpg"),
+          require("../assets/img/project2-featured-15013609.jpg"),
+          require("../assets/img/project1-featured-294276386.jpg"),
+          require("../assets/img/project3-featured-189023420.jpg"),
+          require("../assets/img/project2-featured-15013609.jpg"),
+          require("../assets/img/project1-featured-294276386.jpg"),
           require("../assets/img/project3-featured-189023420.jpg")
         ]
       }

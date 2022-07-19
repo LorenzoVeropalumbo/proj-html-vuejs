@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="slider-component">
     <div class="img">
       <img class="standard-wave" src="../assets/img/wave2.svg" alt="nomal-wave">
       <img :src="slides[currentActiveElement].image" :alt="slides[currentActiveElement].alt">
@@ -49,8 +49,8 @@ export default {
         },
         {
           image: require('../assets/img/TEST-CLUB-HOUSE-PARALLAX.jpg'),
-          imageTestimonial: require( "../assets/img/home-testimonial-84268399.jpg"),
-          testimonialName: "Mario Rossi",
+          imageTestimonial: require( "../assets/img/news-2.jpg"),
+          testimonialName: "Alberto Rossi",
           testimonialText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at sint alias atque modi animi assumenda quidem harum maxime, ab nemo laboriosam quia deleniti eum nostrum illo mollitia consequatur voluptatibus.",
           alt: "home"
         },

@@ -48,7 +48,7 @@ export default {
       background-position: center;
       background-size: 100%;
       width: 100%;
-      padding-block: 350px;
+      padding-block: 400px;
 
       .standard-wave{
         position: absolute;
